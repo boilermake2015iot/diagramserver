@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IOT4.US</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <link href="static/app/css/main.css" rel="stylesheet">
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <span class="logo icon"><img src=
+        "https://maxcdn.icons8.com/Color/PNG/96/Household/home_automation-96.png"
+        title="Home Automation" width="80"></span>
+        <h1>IOT4.US</h1>
+        <p>A simpler way to make your own home a smart home.</p>
+    </div>
+    <!-- Main -->
+    <div id="main">
+        <header class="major container 75%">
+            <h2>Who says you need to spend<br>
+            a lot of money and time<br>
+            to make your home yours?</h2>
+            <!--
+                    <p>Tellus erat mauris ipsum fermentum<br />
+                    etiam vivamus nunc nibh morbi.</p>
+                    -->
+        </header>
+        <div class="box alt container">
+            <section class="feature left">
+                <a class="image icon fa-code" href="#"><img alt="" src="static/app/content/pic01.jpg"></a>
+                <div class="content">
+                    <h3>No need to learn how to code!</h3>
+                    <p>We created a simple drag and drop interface to allow for simple, yet powerful programs to control your home. Customize it all to your liking right on your tablet, whether you're home, or on the go!</p>
+                </div>
+            </section>
+            <section class="feature right">
+                <a class="image icon fa-sitemap" href="#"><img alt="" src="static/app/content/pic02.jpg"></a>
+                <div class="content">
+                    <h3>Integrate with any sensor!</h3>
+                    <p>The system works with a very flexible OS, which allows it to work with anything as low level as a temperature sensor to anything as high as a webcam!</p>
+                </div>
+            </section>
+            <section class="feature left">
+                <a class="image icon fa-clock-o" href="#"><img alt="" src="static/app/content/pic03.jpg"></a>
+                <div class="content">
+                    <h3>Time is money!</h3>
+                    <p>We know technology can be expensive and annoying! We remove the expensive cost of development and support so that you can make your home your own!</p>
+                </div>
+            </section>
+        </div>
+        <div class="box container">
+            <header>
+                <h2>Attention developers!</h2>
+            </header>
+            <section>
+            <p>Developing your own programs is easy! Just follow these specifications.</p>
+                <pre class="prettyprint">
+{
+    "Pages": [
+        {
+            "Name": "Main",
+            "Nodes": [
+                {
+                    "Type": "ServoSet",
+                    "Value": 50
+                },
+                {
+                    "Type": "If",
+                    "Condition": {
+                        "Op": "&gt;",
+                        "Left": "CurrentTemp",
+                        "Right": "75"
+                    },
+                    "Page": "SubPage1"
+                },
+                {
+                    "Type": "If",
+                    "Condition": {
+                        "Op": "&lt;=",
+                        "Left": "CurrentTemp",
+                        "Right": "75"
+                    },
+                    "Page": "SubPage2"
+                },
+                {
+                    "Type": "If",
+                    "Condition": {
+                        "Op": "&lt;=",
+                        "Left": {
+                            "Op": "/",
+                            "Left": {
+                                "Op": "*",
+                                "Left": {
+                                    "Op": "-",
+                                    "Left": "CurrentTemp",
+                                    "Right": 32
+                                },
+                                "Right": 5
+                            },
+                            "Right": 9
+                        },
+                        "Right": 22
+                    },
+                    "Page": "SubPage2"
+                }
+            ]
+        },
+        {
+            "Name": "SubPage1",
+            "Nodes": [
+                {
+                    "Type": "LedOn",
+                    "Value": 1
+                }
+            ]
+        },
+        {
+            "Name": "SubPage2",
+            "Nodes": [
+                {
+                    "Type": "LedOff",
+                    "Value": 1
+                }
+            ]
+        }
+    ]
+}
+</pre>
+                <header>
+                    <h3>Paragraph</h3>
+                    <p>This is the subtitle for this particular heading</p>
+                </header>
+                <p>Phasellus nisl nisl, varius id <sup>porttitor sed
+                pellentesque</sup> ac orci. Pellentesque habitant
+                    <strong>strong</strong> tristique <b>bold</b> et netus
+                    <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit amet risus elit.</p>
+            </section>
+            <section>
+                <header>
+                    <h3>Blockquote</h3>
+                </header>
+                <blockquote>
+                    Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus.
+                </blockquote>
+            </section>
+            <section>
+                <header>
+                    <h3>Divider</h3>
+                </header>
+                <p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                <hr>
+                <p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+            </section>
+            <section>
+                <header>
+                    <h3>Unordered List</h3>
+                </header>
+                <ul class="default">
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h3>Ordered List</h3>
+                </header>
+                <ol class="default">
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                    <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                </ol>
+            </section>
+            <section>
+                <header>
+                    <h3>Table</h3>
+                </header>
+                <div class="table-wrapper">
+                    <table class="default">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>45815</td>
+                                <td>Something</td>
+                                <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                                <td>29.99</td>
+                            </tr>
+                            <tr>
+                                <td>24524</td>
+                                <td>Nothing</td>
+                                <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                                <td>19.99</td>
+                            </tr>
+                            <tr>
+                                <td>45815</td>
+                                <td>Something</td>
+                                <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                                <td>29.99</td>
+                            </tr>
+                            <tr>
+                                <td>24524</td>
+                                <td>Nothing</td>
+                                <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                                <td>19.99</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td>100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <footer class="major container 75%">
+            <h3>Get shady with science</h3>
+            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+            <ul class="actions">
+                <li><a class="button" href="#">Join our crew</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container 75%">
+            <header class="major last">
+                <img src="static/app/content/devpost.svg" width="500">
+                <ul class="copyright">
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>Icon pack by <a href="https://icons8.com">Icons8</a></li>
+                </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.0/skel.min.js">
+    </script>
+    <script src="static/app/scripts/util.js">
+    </script>
+    <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="static/app/scripts/main.js">
+    </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js">
+    </script>
+</body>
+
+</html>

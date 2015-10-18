@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app\Views\diagramview.py" />
+    <Compile Include="app\Views\indexview.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\Views\interactiveview.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,18 +50,61 @@
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\css\" />
+    <Folder Include="app\static\app\css\images\" />
     <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\sass\" />
+    <Folder Include="app\static\app\sass\libs\" />
     <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\app\scripts\ie\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="app\Views\" />
     <Folder Include="restapi\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\content\devpost.svg" />
+    <Content Include="app\static\app\content\header.jpg" />
+    <Content Include="app\static\app\content\intLed.jpg" />
+    <Content Include="app\static\app\content\intRgbLed.jpg" />
+    <Content Include="app\static\app\content\intRPi.png" />
+    <Content Include="app\static\app\content\intServo.png" />
+    <Content Include="app\static\app\content\intTemp.jpg" />
     <Content Include="app\static\app\content\Led.png" />
+    <Content Include="app\static\app\content\pic01.jpg" />
+    <Content Include="app\static\app\content\pic02.jpg" />
+    <Content Include="app\static\app\content\pic03.jpg" />
     <Content Include="app\static\app\content\RgbLed.png" />
     <Content Include="app\static\app\content\Servo.png" />
     <Content Include="app\static\app\content\Temp.png" />
+    <Content Include="app\static\app\css\font-awesome.min.css" />
+    <Content Include="app\static\app\css\ie8.css" />
+    <Content Include="app\static\app\css\images\bottom-1280.svg" />
+    <Content Include="app\static\app\css\images\bottom-1600.svg" />
+    <Content Include="app\static\app\css\images\bottom-3200.svg" />
+    <Content Include="app\static\app\css\images\overlay.png" />
+    <Content Include="app\static\app\css\images\top-1280.svg" />
+    <Content Include="app\static\app\css\images\top-1600.svg" />
+    <Content Include="app\static\app\css\images\top-3200.svg" />
+    <Content Include="app\static\app\css\images\xoverlay.png" />
+    <Content Include="app\static\app\css\main.css" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\static\app\fonts\FontAwesome.otf" />
+    <Content Include="app\static\app\sass\ie8.scss" />
+    <Content Include="app\static\app\sass\libs\_functions.scss" />
+    <Content Include="app\static\app\sass\libs\_mixins.scss" />
+    <Content Include="app\static\app\sass\libs\_skel.scss" />
+    <Content Include="app\static\app\sass\libs\_vars.scss" />
+    <Content Include="app\static\app\sass\main.scss" />
+    <Content Include="app\static\app\scripts\ie\backgroundsize.min.htc" />
+    <Content Include="app\static\app\scripts\ie\PIE.htc" />
+    <Content Include="app\static\app\scripts\main.js" />
+    <Content Include="app\static\app\scripts\util.js" />
+    <Content Include="app\templates\app\index.html" />
     <Content Include="app\templates\app\interactive.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />

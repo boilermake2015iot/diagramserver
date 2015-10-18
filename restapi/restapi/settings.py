@@ -78,9 +78,19 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    path.join(PROJECT_ROOT, 'app\\static\\app\\content'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\css'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\css\\images'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\fonts'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\sass'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\sass\\libs'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\scripts'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\scripts\\ie'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\content'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\content'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\content'),
+    path.join(PROJECT_ROOT, 'app\\static\\app\\content'),
+
 )
 
 # List of finder classes that know how to find static files in

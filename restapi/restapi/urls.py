@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from app.Views import diagramview,interactiveview
+from app.Views import diagramview,interactiveview,indexview
 
 urlpatterns = [
     url(r'^interactive.*$', include(interactiveview)),
-    url(r'^diagram.*$', include(diagramview))
+    url(r'^diagram.*$', include(diagramview)),
+    url(r'^.*$', include(indexview))
 ]
