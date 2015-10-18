@@ -13,7 +13,10 @@ def diagram(request):
     modules = request.GET.getlist("module")
     im = Image.new("RGBA", (864, 864))
     for module in modules:
-        image = Image.open(BASE_DIR +  module + ".png").convert("RGBA")
+        try:
+            image = Image.open(BASE_DIR +  module + ".png").convert("RGBA")
+        except IOError:
+            continue
         for x in range(864):
             for y in range(864):
                 pixel = image.getpixel((x, y))
